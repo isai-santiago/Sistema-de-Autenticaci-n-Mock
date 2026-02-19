@@ -7,7 +7,7 @@
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
 ![Security](https://img.shields.io/badge/Security-Advanced_RBAC-success.svg)
 
-**A Auth** es un sistema avanzado de autenticación y autorización Frontend diseñado como una prueba de concepto (Mock Environment) de alta seguridad. Demuestra la implementación de flujos complejos de sesión, persistencia de datos, auditoría en tiempo real y jerarquías de roles estables sin dependencia de un backend real.
+**Administrator Auth** es un sistema avanzado de autenticación y autorización Frontend diseñado como una prueba de concepto (Mock Environment) de alta seguridad. Demuestra la implementación de flujos complejos de sesión, persistencia de datos, auditoría en tiempo real y jerarquías de roles estables sin dependencia de un backend real.
 
 ---
 
