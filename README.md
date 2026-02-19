@@ -58,7 +58,7 @@ Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local.
 1. **Clonar el repositorio:**
    ```bash
    git clone [https://github.com/tu-usuario/zeryux-auth-system.git](https://github.com/tu-usuario/zeryux-auth-system.git)
-   cd zeryux-auth-system
+   cd administrator-auth-system
 
 ```
 
