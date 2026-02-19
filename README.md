@@ -18,7 +18,6 @@
 3. [🚀 Instalación y Despliegue (Setup)](#-instalación-y-despliegue-setup)
 4. [📖 Manual de Usuario (Roles y Accesos)](#-manual-de-usuario-roles-y-accesos)
 5. [🖥️ Guía del Panel de Control](#-guía-del-panel-de-control-dashboard)
-6. [📂 Estructura del Proyecto](#-estructura-del-proyecto)
 
 ---
 
