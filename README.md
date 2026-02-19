@@ -49,36 +49,62 @@ El sistema está construido bajo los siguientes paradigmas técnicos:
 Sigue estos pasos para levantar el entorno de desarrollo en tu máquina local.
 
 ### Prerrequisitos
-* Node.js v18.0.0 o superior.
-* Gestor de paquetes `npm` (v9+), `yarn` o `pnpm`.
 
-### Pasos de Instalación
+* **Node.js:** v18.0.0 o superior.
+* **Gestor de paquetes:** `npm` (v9+), `yarn` o `pnpm`.
 
-1. **Clonar el repositorio:**
-   ```bash
-   git clone [https://github.com/tu-usuario/zeryux-auth-system.git](https://github.com/tu-usuario/zeryux-auth-system.git)
-   cd administrator-auth-system
+### 📦 Módulos y Dependencias Requeridas
 
-```
+El proyecto depende de los siguientes módulos para asegurar que el diseño, las animaciones y el entorno de pruebas funcionen correctamente:
+
+**Core del Framework:**
+* `next`
+* `react`
+* `react-dom`
+* `typescript`
+
+**UI, Estilos y Animaciones:**
+* `framer-motion` *(Para transiciones fluidas en los modales y páginas)*
+* `lucide-react` *(Sistema de iconografía del panel)*
+* `clsx` y `tailwind-merge` *(Utilidades para concatenación dinámica de clases de Tailwind)*
+
+**Entorno de Testing (Desarrollo):**
+* `jest`
+* `@testing-library/react`
+* `@testing-library/jest-dom`
+* `jest-environment-jsdom`
+* `ts-node`
+* `@types/jest`
+
+---
+
+### 🛠️ Pasos de Instalación
+
+**1. Clonar el repositorio:**
+```bash
+git clone [https://github.com/tu-usuario/zeryux-auth-system.git](https://github.com/tu-usuario/zeryux-auth-system.git)
+cd administrator-auth-system
+
+---
 
 2. **Instalar dependencias:**
+Si el archivo package.json ya está configurado, simplemente ejecuta:
 ```bash
-npm install
+npm install```
 
-```
-
+**Nota: Si estás configurando el proyecto desde cero, puedes instalar los módulos manualmente con:**
+```bash
+npm install framer-motion lucide-react clsx tailwind-merge
+npm install -D jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom ts-node @types/jest```
 
 3. **Iniciar el servidor de desarrollo:**
 ```bash
-npm run dev
-
-```
-
+npm run dev```
 
 4. **Acceso al sistema:**
-Abre tu navegador y navega a [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000).
 
----
+Abre tu navegador y navega a http://localhost:3000.
+
 
 ## 📖 Manual de Usuario (Roles y Accesos)
 
