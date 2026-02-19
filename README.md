@@ -81,7 +81,7 @@ El proyecto depende de los siguientes módulos para asegurar que el diseño, las
 ### 🛠️ Pasos de Instalación
 
 **1. Clonar el repositorio:**
-```bash
+
 git clone [https://github.com/tu-usuario/zeryux-auth-system.git](https://github.com/tu-usuario/zeryux-auth-system.git)
 cd administrator-auth-system
 
@@ -89,17 +89,17 @@ cd administrator-auth-system
 
 2. **Instalar dependencias:**
 Si el archivo package.json ya está configurado, simplemente ejecuta:
-```bash
-npm install```
+
+npm install
 
 **Nota: Si estás configurando el proyecto desde cero, puedes instalar los módulos manualmente con:**
-```bash
+
 npm install framer-motion lucide-react clsx tailwind-merge
 npm install -D jest @testing-library/react @testing-library/jest-dom jest-environment-jsdom ts-node @types/jest```
 
 3. **Iniciar el servidor de desarrollo:**
-```bash
-npm run dev```
+
+npm run dev
 
 4. **Acceso al sistema:**
 
