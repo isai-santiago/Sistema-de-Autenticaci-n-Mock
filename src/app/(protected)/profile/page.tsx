@@ -1,0 +1,47 @@
+'use client';
+import { useAuth } from '@/contexts/AuthContext';
+import { Button } from '@/components/ui/Button';
+
+export default function ProfilePage() {
+  const { user } = useAuth();
+
+  if (!user) return null;
+
+  return (
+    <div className="max-w-2xl mx-auto bg-white shadow rounded-lg overflow-hidden mt-10">
+      <div className="px-4 py-5 sm:px-6 bg-gray-50 border-b border-gray-200">
+        <h3 className="text-lg leading-6 font-medium text-gray-900">
+          Perfil de Usuario
+        </h3>
+        <p className="mt-1 max-w-2xl text-sm text-gray-500">
+          Detalles personales y preferencias.
+        </p>
+      </div>
+      <div className="border-t border-gray-200">
+        <dl>
+          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">Nombre completo</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{user.name}</dd>
+          </div>
+          <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">Email</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">{user.email}</dd>
+          </div>
+          <div className="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">Rol</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 capitalize">{user.role}</dd>
+          </div>
+          <div className="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+            <dt className="text-sm font-medium text-gray-500">ID de Usuario</dt>
+            <dd className="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2 font-mono">{user.id}</dd>
+          </div>
+        </dl>
+      </div>
+      <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+        <Button variant="secondary" onClick={() => alert("Funcionalidad de editar pendiente")}>
+            Editar Perfil
+        </Button>
+      </div>
+    </div>
+  );
+}
